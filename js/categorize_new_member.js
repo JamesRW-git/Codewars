@@ -16,21 +16,9 @@
 // input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 // output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
-let input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 
-// function openOrSenior(data){
-//     let assignments = [];
-//     data.forEach(function(pair, i) {
-//         if(pair[i][0] >= 55 && pair[i][1] > 7) {
-//             assignments.push('Senior');
-//         } else {
-//             assignments.push('Open');
-//         }
-//         })
-//     return assignments;
-// }
-//
-// openOrSenior(input);
+//My solution
+let input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 
 function openOrSenior(data){
     let assignments = [];
