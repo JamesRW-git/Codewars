@@ -8,3 +8,9 @@ function hello(name) {
 hello('jamEs');
 hello('haley');
 hello('hAlEy');
+
+//Tried taking the 'fixed' name and assigning it to a variable, errors out about charAt
+function hello(name) {
+    let fixedName = (name.charAt(0).toUpperCase() + name.slice(1).toLowerCase());
+    return 'Hello, ' + fixedName + '!';
+}
