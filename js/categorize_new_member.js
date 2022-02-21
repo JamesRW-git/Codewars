@@ -18,16 +18,25 @@
 
 
 //My solution
-let input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
+let input = [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 
-function openOrSenior(data){
+// function openOrSenior(data){
+//     let assignments = [];
+//     data.forEach(function(pair, i) {
+//         if(pair[0] >= 55 && pair[1] > 7) {
+//             assignments.push('Senior');
+//         } else {
+//             assignments.push('Open');
+//         }
+//     })
+//     return assignments;
+// }
+
+//refactored to use ternary operator at Casey's suggestion
+function openOrSenior(data) {
     let assignments = [];
-    data.forEach(function(pair, i) {
-        if(pair[0] >= 55 && pair[1] > 7) {
-            assignments.push('Senior');
-        } else {
-            assignments.push('Open');
-        }
+    data.forEach(function(pair) {
+        assignments.push(pair[0] >= 55 && pair[1] > 7 ? 'Senior' : 'Open');
     })
     return assignments;
 }
