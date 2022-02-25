@@ -12,8 +12,7 @@
 // }
 
 
-//Second attempt. Works on any number of names as long as they are a string, else returns
-//a log stating to input as a string
+//Second attempt. Works on any number of names as long as they are a string, else returns 'Hello, World!'
 function greet(input) {
     if (typeof (input) === 'string' && input !== '') {
         let names = [];
@@ -25,7 +24,7 @@ function greet(input) {
         }
         return console.log('Hello, ' + fixedNames + '!');
     } else {
-        return console.log('Please enter name input as a string');
+        return console.log('Hello, World!');
     }
 }
 
