@@ -1,9 +1,7 @@
-function sumMix(x){
+function oddOrEven(x){
     let sum = 0;
     x.forEach(function(num) {
         sum += parseInt(num);
     })
-    return sum;
+    return (sum % 2 === 0 ? 'even' : 'odd');
 }
-
-console.log(sumMix([9, 3, '7', '3']));
