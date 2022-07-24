@@ -11,4 +11,4 @@ function bouncingBall(h,  bounce,  window) {
     }
 }
 
-console.log(bouncingBall(2.0, .5, 1.0))
+console.log(bouncingBall(30.0, .5, 1.0))
