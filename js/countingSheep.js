@@ -1,10 +1,15 @@
 function countSheeps(arrayOfSheep) {
     let count = 0;
-    arrayOfSheep.forEach(function(value) {
-        if(value == true) {
+    // arrayOfSheep.forEach(function(value) {
+    //     if(value == true) {
+    //         count++;
+    //     }
+    // })
+    for (let i = 0; i < arrayOfSheep.length; i++) {
+        if(arrayOfSheep[i] == true) {
             count++;
         }
-    })
+    }
     return count;
 }
 
